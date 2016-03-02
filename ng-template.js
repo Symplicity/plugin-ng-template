@@ -19,7 +19,7 @@ function resolveUrl( address, baseUrl ) {
 }
 
 exports.translate = function translate( load ) {
-  var baseUrl = typeof System.baseURL === 'string' ? System.baseURL : '',
+  var baseUrl = typeof System.baseURL === 'string' ? System.baseURL + 'wwwdocs/' : '',
     options = System.ngTemplatePlugin || {},
     url = resolveUrl( load.address, baseUrl );
 
